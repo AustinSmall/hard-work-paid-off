@@ -1,7 +1,7 @@
 :root {
     --primary-color: hwb(0 100% 0%);
     --secondary-color: #000000;
-    --tertiary-color: #ffffff;
+
 }
  
 * {
@@ -18,7 +18,7 @@ body {
 
 header {
     padding: 20px 35px;
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -35,7 +35,7 @@ header {
 header h1 {
  font-weight: bold;
  margin: 0;
- font-size: 36px;
+ font-size: 50px;
  color: var(--secondary-color);
  text-shadow: none;
 }
@@ -58,7 +58,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 10px 15px;
+    padding: 30px 30px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -71,6 +71,31 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+footer {
+    background: var(--primary-color);
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  footer h2 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  footer div {
+    line-height: 1.5;
+    text-align: right;
+  }
+
+.section-title {
+    font-size: 40px;
+
+}
+
 .about-me {
     background-size: cover;
     display: flex;
@@ -79,12 +104,17 @@ header nav ul li a:hover {
     align-items: flex-start;
     background-attachment: fixed;
     background-position: 80%;
-    background-color: var(--secondary-color)
-    text-color: var(--secondary-color)
+    background-color: var(--secondary-color);
+    color: var(--secondary-color);
     text-align: left;
 }
-img{
-    max-width: 50%;
-    height: auto;
-    padding: auto;
+
+.profile-pic {
+  flex: 1 12%;
+  margin-right: 20px;
 }
+
+.profile-pic {
+  max-width: 100%;
+}
+
