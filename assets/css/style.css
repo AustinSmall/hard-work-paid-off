@@ -13,6 +13,7 @@
 
 body {
   font-family: 'Times New Roman', Times, serif;
+  position: fixed;
 }
 
 /* header/nav*/
@@ -68,17 +69,8 @@ color: var(--secondary-color);
 border-radius: 10px;
 }
 /* end of header */
-.section-title {
-text-align: center;
-font-size: 40px;
-font-weight: bolder;
-margin: 0 auto 35px;
-padding-bottom: 20px;
-}
-/* end of section title */
 
 /* about me section begins */
-
 .title1 {
   color: var(--primary-color);
   font-size: 40px;
@@ -91,6 +83,15 @@ padding-bottom: 20px;
   
 }
 
+.about-me {
+  color: var(--primary-color);
+  align-items: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 100%;
+  background-image: url(../images/matrix.gif);
+}
+
 .about-me img {
   height: auto;
   width: 90%;
@@ -99,32 +100,27 @@ padding-bottom: 20px;
   padding-left: 150px;
 }
 
-.about-me p {
-  width: 50%;
-  font-size: 20px;
-  margin-right: 150px;
-  text-align: center;
+.aboutme {
+  width: 90%;
+  padding-left: 180px;
+  padding-bottom: 60px;
 }
 
-.about-me {
-  color: var(--primary-color);
-  padding-right: 30px;
-  align-items: center;
-  padding: 25px;
-  padding-right: 20px;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 100%;
-  background-image: url(../images/matrix.gif);
-}
+
 /* about me ends*/
 
 /* my work begins */
 .title2 {
 font-size: 40px;
 text-align: center;
+padding-top: 40px;
 padding-bottom: 40px;
 }
+
+.me {
+
+}
+
 .my-work {
   width: 100%;
   margin: 0 auto;
@@ -235,11 +231,51 @@ footer {
     text-align: center;
     width: 100%;
   }
+  .my-work {
+    flex: 0 100;
+  }
 }
 
 @media screen and (max-width: 575px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+  
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  header nav ul li a {
+    font-size: 20px;
+  }
+  
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+
   .works {
     flex: 0 100%;
   }
-  
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+ .about-me {
+  flex: 0 100%;
+ }
+
 }
