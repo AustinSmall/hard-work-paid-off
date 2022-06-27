@@ -193,6 +193,8 @@ footer {
   color: var(--primary-color);
   text-align: center;
   background-attachment: fixed;
+  background-size: cover;
+  background-position: 100%;
   background-image: url(../images/matrix.gif);
   flex-wrap: wrap;
 }
